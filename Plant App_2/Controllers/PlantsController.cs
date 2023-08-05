@@ -41,6 +41,11 @@ namespace Plant_App_2.Controllers
     //return View();
         }
 
+        public async Task<IActionResult> UploadPlantPicture()
+        {
+            return View();
+        }
+
 
 
 
@@ -48,10 +53,10 @@ namespace Plant_App_2.Controllers
         //POST PLANT TO API
 
 
-       // public async Task<JObject> identifyPlant()
+        // public async Task<JObject> identifyPlant()
         //{
-            //string API_Key;
-          //  string api_endpoint = $"https://my-api.plantnet.org/v2/identify/all?api-key={API_KEY}";
+        //string API_Key;
+        //  string api_endpoint = $"https://my-api.plantnet.org/v2/identify/all?api-key={API_KEY}";
 
 
 

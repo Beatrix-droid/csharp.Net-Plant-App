@@ -1,0 +1,43 @@
+﻿@model Plant_App_2.Models.Plant
+
+<h4>Plant</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <h1> Upload a picture of the plant you want to identify</h1>
+        <form asp-action="UploadPlantPicture">
+      
+       
+            <div class="form-group">
+                <label class="form-label" for="customFile">Upload a plant Picture</label>
+                <input type="file" class="form-control" id="customFile" />
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="plant" id="bark" value="bark/stem" checked>
+                    <label class="form-check-label" for="bark">
+                        Bark/Stem
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="plant" id="Leaf" value="Leaf">
+                    <label class="form-check-label" for="Leaf">
+                        Leaf
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="plant" id="Flower" value="Flower">
+                    <label class="form-check-label" for="Flower">
+                        Flower
+                    </label>
+                </div>
+                <input type="submit" value="Identify" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+
